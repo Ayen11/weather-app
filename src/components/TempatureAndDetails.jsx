@@ -22,7 +22,7 @@ function TempatureAndDetails() {
           className="w-20"
         />
         <p className="text-5xl">34°</p>
-        {/* details */}
+        {/* side details */}
         <div className="flex flex-col space-y-2">
           {/* real feel */}
           <div className="flex font-light text-sm items-center justify-center">
@@ -43,6 +43,32 @@ function TempatureAndDetails() {
             <span className="font-medium ml-1">11 km/h</span>
           </div>
         </div>
+      </div>
+      {/* footer details */}
+      <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
+        {/* Sun rise */}
+        <UilSun />
+        <p className="font-light">
+          Rise: <span className="font-medium ml-1">06:45 AM</span>
+        </p>
+        <p className="font-light">|</p>
+        {/* Sun set */}
+        <UilSunset />
+        <p className="font-light">
+          Set: <span className="font-medium ml-1">08:30 PM</span>
+        </p>
+        <p className="font-light">|</p>
+        {/* Temp high */}
+        <UilArrowUp />
+        <p className="font-light">
+          High: <span className="font-medium ml-1">45°</span>
+        </p>
+        <p className="font-light">|</p>
+        {/* Temp low */}
+        <UilArrowDown />
+        <p className="font-light">
+          Low: <span className="font-medium ml-1">40°</span>
+        </p>
       </div>
     </div>
   );
