@@ -13,7 +13,8 @@ function App() {
       <Inputs />
       <TimeAndLocation />
       <TempatureAndDetails />
-      <Forecast />
+      <Forecast title="hourly forecast" />
+      <Forecast title="daily forecast" />
     </div>
   );
 }
